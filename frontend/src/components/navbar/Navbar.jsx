@@ -4,6 +4,7 @@ import { Container } from "../ui";
 import { useAuth } from "../../context/AuthContext";
 import { twMerge } from "tailwind-merge";
 import { BiLogOut } from "react-icons/bi";
+import felko_logo from "../../assets/felko_logo.png";
 
 function Navbar() {
   const location = useLocation();
@@ -13,7 +14,7 @@ function Navbar() {
     <nav className="bg-zinc-950">
       <Container className="flex justify-between py-3">
         <Link to="/">
-          <h1 className="font-bold text-2xl">PERN Tasks</h1>
+          <img className="w-1/4" src={felko_logo} alt="" />
         </Link>
 
         <ul className="flex items-center justify-center md:gap-x-1">
@@ -42,7 +43,7 @@ function Navbar() {
                 }}
               >
                 <BiLogOut className="w-5 h-5" />
-                <span className="hidden sm:block">Logout</span>
+                <span className="hidden sm:block">Salir</span>
               </li>
 
               <li className="flex gap-x-1 items-center justify-center">

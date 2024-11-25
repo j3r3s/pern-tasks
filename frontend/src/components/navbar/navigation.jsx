@@ -18,12 +18,12 @@ export const publicRoutes = [
 
 export const privateRoutes = [
   {
-    name: "Tasks",
+    name: "Cajas",
     path: "/tasks",
     icon: <BiTask className='w-5 h-5' />,
   },
   {
-    name: "Add",
+    name: "Agregar",
     path: "/tasks/new",
     icon: <MdTaskAlt className='w-5 h-5' />,
   },
